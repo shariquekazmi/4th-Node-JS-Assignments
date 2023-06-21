@@ -1,0 +1,22 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+</head>
+<body>
+    <header>
+       <h1>Users</h1>
+       <% if(users.length > 0) { %>
+            <ul>
+                <% users.forEach((user) => { %>
+                    <li><%= user.name %></li>
+                <% }) %>
+            </ul>
+        <% } else { %>
+            <h1>No Users Found!</h1>
+        <% } %>
+    </header>
+    
+</body>
+
+</html>
